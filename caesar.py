@@ -10,7 +10,7 @@ def cipher(a, b, plain_text, alphabet):
 
 	for char in plain_text:
 		code = a * key_map[char] + b
-		cipher_text += inversed_key_map[code % len(alphabet)]
+		cipher_text += inversed_key_map[code % len(alphabet)] 
 
 	return cipher_text
 
